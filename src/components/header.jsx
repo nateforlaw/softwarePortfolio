@@ -2,7 +2,6 @@ import React from 'react';
 
 class Header extends React.Component {
     render(){
-        console.log(this.props.page);
         return <div id="header">
             <button className={(this.props.page===0)?"expand":""} onClick={() => this.props.headerHandler(0)}><span>Home </span></button>
             <button className={(this.props.page===1)?"expand":""} onClick={() => this.props.headerHandler(1)}><span>Java </span></button>
