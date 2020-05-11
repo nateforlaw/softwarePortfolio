@@ -32,7 +32,7 @@ class App extends React.Component {
 
   render() {
     return <div>
-      <Header headerHandler={this.headerHandler}/>
+      <Header page={this.state.pageLoaded} headerHandler={this.headerHandler}/>
       {this.renderPage()}
     </div>
   }
