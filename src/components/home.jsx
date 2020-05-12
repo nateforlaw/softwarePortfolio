@@ -9,7 +9,7 @@ class Home extends React.Component {
                 Starting in middle school, I picked any class that had anything to do with software. 
                 By freshman year in high school, I was already prepared to conquer any projects that involved computer accelerated development.</p>
             <p>
-                Like many developers, some of my first endeavors into programming was heavily comprised of <a href='https://scratch.mit.edu/studios/8793695/' rel="noopener noreferrer" target="_blank">Scratch</a>.
+                Like many developers, many of my earliest endeavors into programming were heavily comprised of <a href='https://scratch.mit.edu/studios/8793695/' rel="noopener noreferrer" target="_blank">Scratch</a>.
             </p>
             <img src={scratch_circles} alt=''></img>
             <p>
