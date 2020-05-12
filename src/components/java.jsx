@@ -5,6 +5,7 @@ import java_desktop from '../bin/java_desktop.png';
 class Java extends React.Component {
     render(){
         return <div className="page">
+            <h1>I am a creator.</h1>
             <p>
                 When developing in Java, I most commonly use BlueJ. 
                 It was introduced to me during my sophmore year of highschool, and it's my go-to for developing anything in Java.
