@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/softwarePortfolio/static/css/main.c75125e7.chunk.css",
-    "main.js": "/softwarePortfolio/static/js/main.4d6e88e5.chunk.js",
-    "main.js.map": "/softwarePortfolio/static/js/main.4d6e88e5.chunk.js.map",
+    "main.css": "/softwarePortfolio/static/css/main.66ff7b95.chunk.css",
+    "main.js": "/softwarePortfolio/static/js/main.ebf99ec3.chunk.js",
+    "main.js.map": "/softwarePortfolio/static/js/main.ebf99ec3.chunk.js.map",
     "runtime-main.js": "/softwarePortfolio/static/js/runtime-main.85ddf58a.js",
     "runtime-main.js.map": "/softwarePortfolio/static/js/runtime-main.85ddf58a.js.map",
-    "static/js/2.342105e8.chunk.js": "/softwarePortfolio/static/js/2.342105e8.chunk.js",
-    "static/js/2.342105e8.chunk.js.map": "/softwarePortfolio/static/js/2.342105e8.chunk.js.map",
+    "static/js/2.28a1ef03.chunk.js": "/softwarePortfolio/static/js/2.28a1ef03.chunk.js",
+    "static/js/2.28a1ef03.chunk.js.map": "/softwarePortfolio/static/js/2.28a1ef03.chunk.js.map",
     "index.html": "/softwarePortfolio/index.html",
-    "precache-manifest.dd40445dfac435da8f34eb24079adee4.js": "/softwarePortfolio/precache-manifest.dd40445dfac435da8f34eb24079adee4.js",
+    "precache-manifest.4d8d083e651af506d4acc1ab56216122.js": "/softwarePortfolio/precache-manifest.4d8d083e651af506d4acc1ab56216122.js",
     "service-worker.js": "/softwarePortfolio/service-worker.js",
-    "static/css/main.c75125e7.chunk.css.map": "/softwarePortfolio/static/css/main.c75125e7.chunk.css.map",
-    "static/js/2.342105e8.chunk.js.LICENSE.txt": "/softwarePortfolio/static/js/2.342105e8.chunk.js.LICENSE.txt",
+    "static/css/main.66ff7b95.chunk.css.map": "/softwarePortfolio/static/css/main.66ff7b95.chunk.css.map",
+    "static/js/2.28a1ef03.chunk.js.LICENSE.txt": "/softwarePortfolio/static/js/2.28a1ef03.chunk.js.LICENSE.txt",
     "static/media/java_desktop.png": "/softwarePortfolio/static/media/java_desktop.cb2b5980.png",
     "static/media/js_uno.png": "/softwarePortfolio/static/media/js_uno.b23704fc.png",
     "static/media/php_output.png": "/softwarePortfolio/static/media/php_output.db29f956.png",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.85ddf58a.js",
-    "static/js/2.342105e8.chunk.js",
-    "static/css/main.c75125e7.chunk.css",
-    "static/js/main.4d6e88e5.chunk.js"
+    "static/js/2.28a1ef03.chunk.js",
+    "static/css/main.66ff7b95.chunk.css",
+    "static/js/main.ebf99ec3.chunk.js"
   ]
 }
