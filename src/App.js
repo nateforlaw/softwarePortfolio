@@ -5,7 +5,7 @@ import Java from './components/java.jsx';
 import Javascript from './components/javascript.jsx';
 import PHP from './components/php.jsx';
 import SQL from './components/sql.jsx';
-import './styles/app.css';
+import './styles/App.css';
 
 class App extends React.Component {
   constructor(props) {
