@@ -3,6 +3,7 @@ import Header from './components/header.jsx';
 import Home from './components/home.jsx';
 import Java from './components/java.jsx';
 import Javascript from './components/javascript.jsx';
+import C from './components/c.jsx';
 import PHP from './components/php.jsx';
 import SQL from './components/sql.jsx';
 import './styles/App.css';
@@ -25,8 +26,9 @@ class App extends React.Component {
       case 0: return <Home/>;
       case 1: return <Java/>;
       case 2: return <Javascript/>;
-      case 3: return <PHP/>;
-      case 4: return <SQL/>;
+      case 3: return <C/>;
+      case 4: return <PHP/>;
+      case 5: return <SQL/>;
     }
   }
 

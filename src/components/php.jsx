@@ -13,6 +13,9 @@ class PHP extends React.Component {
             <img src={php_input} alt='' height="200px"></img>
             <img src={php_output} alt='' height="200px"></img>
             <Snippet type='php'/>
+            <p>
+                Please don't hire me to write PHP.
+            </p>
         </div>
     }
 }

@@ -7,20 +7,23 @@ class Javascript extends React.Component {
         return <div className="page">
             <h1>I am an artist.</h1>
             <p>
-                As you may noticed, JavaScript is one of my favorite languages to use. 
+                JavaScript is my favorite language to use by far.
                 Not neccecarily by iteself, but since it is so widley used, it has a lot of support and libraries.
-                In fact, I like to use JavaScript with the React framework.
+                I like to use JavaScript with the React framework.
             </p>
             <p>
-                My uno project is my largest project to date by far. 
+                My uno project is my largest project in any language. 
                 Nearly everything is animated using CSS and there are computers that play against you.
                 You can play my game <a href='https://nlawrence162.github.io/unoGameSimulator/' rel="noopener noreferrer" target="_blank">Here</a>.
             </p>
             <img src={js_uno} alt='' width="85%"></img>
             <p>
-                You may have also noticed the randomized names, too. Feast your eyes:
+                You may have also noticed the randomized names, too:
             </p>
             <Snippet type='js'/>
+            <p>
+                Thank you for scrolling all the way down. I appreciate it.
+            </p>
         </div>
     }
 }
