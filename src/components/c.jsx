@@ -1,5 +1,6 @@
 import React from 'react';
 import blowfish from '../bin/blowfish.png';
+import Snippet from './code_snippets.jsx';
 
 class C extends React.Component {
     render(){
@@ -30,7 +31,10 @@ class C extends React.Component {
                 I reopened the componets themselves and smoothed out the issues, then re-implemented them.
                 I rinsed and repeated untill I had something that worked, and It didn't take very long either.
             </p>
-
+            <p>
+                encode_main.c:
+            </p>
+            <Snippet type='c'/>
         </div>
     }
 }

@@ -904,6 +904,68 @@ class Snippet extends React.Component {
     
     export default Game;
             `}</pre>);
+    case 'c': return (<pre>{`
+    #include "util.h"
+    #include "pgmimg.h"
+    #include "quality.h"
+    #include "zigzag.h"
+    #include "bitio.h"
+    
+    int main(int argc, char **argv)
+    {
+        FILE *iFile; // .pgm input
+        FILE *oFile; // .dat output
+        int quality = 50;
+    
+        PGM image;
+    
+        iFile = fopen(argv[1], "rb");
+        oFile = fopen(argv[2], "wb");
+        if(argc == 4) {
+            quality = atoi(argv[3]);
+        }
+    
+        //Read Image
+        image = readPGM(iFile);
+    
+        //Write Header
+        fprintf(oFile,"%c",(char)image.fatness);
+        fprintf(oFile,"%c",(char)(image.fatness >> 8));
+        fprintf(oFile,"%c",(char)image.tallness);
+        fprintf(oFile,"%c",(char)(image.tallness >> 8));
+        fprintf(oFile,"%c",(char)quality);
+        fprintf(oFile,"%c",image.format[1]);
+    
+        for(int i = 0; i < image.blockCount; i++) {
+            //Add Averages to Matrices
+            image.blockBuffer[i].avg = ComputeAverage(image.blockBuffer[i]);
+            if(image.format[1] == '6') {
+                image.blockBuffer2[i].avg = ComputeAverage(image.blockBuffer2[i]);
+                image.blockBuffer3[i].avg = ComputeAverage(image.blockBuffer3[i]);
+            }
+    
+            //Compute DCT Coefficients
+            image.blockBuffer[i] = computeDCT(image.blockBuffer[i], quality);
+            if(image.format[1] == '6') {
+                image.blockBuffer2[i] = computeDCT(image.blockBuffer2[i], quality);
+                image.blockBuffer3[i] = computeDCT(image.blockBuffer3[i], quality);
+            }
+    
+            //ZigZag Encode
+            image.blockBuffer[i] = zigZagEncode(image.blockBuffer[i]);
+            if(image.format[1] == '6') {
+                image.blockBuffer2[i] = zigZagEncode(image.blockBuffer2[i]);
+                image.blockBuffer3[i] = zigZagEncode(image.blockBuffer3[i]);
+            }
+    
+            //Write Bits
+            writeBlock(image.blockBuffer[i], oFile);
+            if(image.format[1] == '6') {
+                writeBlock(image.blockBuffer2[i], oFile);
+                writeBlock(image.blockBuffer3[i], oFile);
+            }
+        }
+    }`}</pre>);
             case 'php': return (<pre>{`
     <?php
         // get the data from the form
